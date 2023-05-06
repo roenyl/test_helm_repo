@@ -62,7 +62,7 @@ jobs:
           helm package charts/jenkins --app-version=${VERSION:1} --version=${VERSION:1} --destination=.cr-release-packages
 
       - name: Run chart-releaser
-        uses: uses: helm/chart-releaser-action@v1.5.0
+        uses: helm/chart-releaser-action@v1.5.0
         with:
           skip_packaging: true
         env:
