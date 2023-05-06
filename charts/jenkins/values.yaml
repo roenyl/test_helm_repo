@@ -13,7 +13,7 @@
 # ref: https://github.com/kubernetes/dns/blob/master/docs/specification.md
 clusterZone: "cluster.local"
 
-renderHelmLabels: false
+renderHelmLabels: true
 
 controller:
   # Used for label app.kubernetes.io/component
