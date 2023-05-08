@@ -20,6 +20,59 @@ entries:
           url: https://www.jenkins.io/
         - name: support
           url: https://github.com/jenkinsci/helm-charts/issues
+      test_metadata: testing metadata one two three
+    apiVersion: v2
+    appVersion: 0.0.11
+    created: "2023-05-08T19:07:47.674735899Z"
+    description: Jenkins - Build great things at any scale! The leading open source
+      automation server, Jenkins provides hundreds of plugins to support building,
+      deploying and automating any project.
+    digest: 38effe560da94b361665548a7f323d15648287a11af0fc7d0dc78ddeb2390be6
+    home: https://jenkins.io/
+    icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
+    keywords:
+    - jenkins
+    - ci
+    - devops
+    maintainers:
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    - email: timjacomb1@gmail.com
+      name: timja
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-inbound-agent
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - https://github.com/roenyl/test_helm_repo/releases/download/jenkins-0.0.11/jenkins-0.0.11.tgz
+    version: 0.0.11
+  - annotations:
+      artifacthub.io/category: integration-delivery
+      artifacthub.io/images: |
+        - name: jenkins
+          image: jenkins/jenkins:2.387.3-jdk11
+        - name: k8s-sidecar
+          image: kiwigrid/k8s-sidecar:1.23.1
+        - name: inbound-agent
+          image: jenkins/inbound-agent:3107.v665000b_51092-5
+        - name: backup
+          image: maorfr/kube-tasks:0.2.0
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
+        - name: Jenkins
+          url: https://www.jenkins.io/
+        - name: support
+          url: https://github.com/jenkinsci/helm-charts/issues
       test_metadata: testing metadata
     apiVersion: v2
     appVersion: 0.0.10
@@ -159,4 +212,4 @@ entries:
     urls:
     - https://github.com/roenyl/test_helm_repo/releases/download/jenkins-0.0.7/jenkins-0.0.7.tgz
     version: 0.0.7
-generated: "2023-05-08T19:03:24.944902503Z"
+generated: "2023-05-08T19:07:47.674758599Z"
